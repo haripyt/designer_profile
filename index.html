@@ -19,7 +19,24 @@
 
 
     <link rel="stylesheet" href="./assets/css/style.css">
-     <style> nav.mobile { display: flex; position: fixed; bottom: 0; width: 95%; padding: 0.8rem 0; background: #202020; border-top: 1px solid #e09a0e; z-index: 9999; margin: 0 auto;border-radius:35px 35px 35px 35px; margin-bottom: 10px;margin-left:10px } .mobile { transition: 0.5s ease!important; } nav.mobile ul { list-style: none; display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0; justify-self: center; vertical-align: middle; } nav.mobile ul li { display: flex; flex-direction: column; align-items: center; font-size: 0.7rem; flex-grow: 1; margin: 0; } nav.mobile ul li a { color: #fff; font-size: inherit; display: var(--prP3M8); flex-direction: var(--mZSq9k); }nav.mobile ul li a svg{width: 22px; height: 24px; display: block;margin: 0 auto; } </style>
+    <style> nav.mobile { display: flex; position: fixed; bottom: 0; width: 95%; padding: 0.8rem 0; background: #202020; border-top: 1px solid #e09a0e; z-index: 9999; margin: 0 auto;border-radius:35px 35px 35px 35px; margin-bottom: 10px;margin-left:10px } .mobile { transition: 0.5s ease!important; } nav.mobile ul { list-style: none; display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0; justify-self: center; vertical-align: middle; } nav.mobile ul li { display: flex; flex-direction: column; align-items: center; font-size: 0.7rem; flex-grow: 1; margin: 0; } nav.mobile ul li a { color: #fff; font-size: inherit; display: var(--prP3M8); flex-direction: var(--mZSq9k); }nav.mobile ul li a svg{width: 22px; height: 24px; display: block;margin: 0 auto; } 
+
+    /* Hide the navigation bar by default */
+.bottom-navigation {
+  display: none;
+}
+
+/* Apply styles for screens with a maximum width of, for example, 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .bottom-navigation {
+    display: block; /* Show the navigation bar */
+  }
+}
+
+
+</style>
+
+
 </head>
 
 <body>
@@ -59,7 +76,7 @@
                                 <h4>A DESIGNER</h4>
                                 <h1><span style="color: #e09a0e;">Hari </span> Haran.</h1>
                                 <p>I am a UI/UX Designer based in Chennai.</p>
-                                
+                             
                             </div>
                         </div>
                     </div>
@@ -207,8 +224,8 @@
 
     </main>
 
-
-    <nav class='mobile' id='ATnav' >
+     <div class="bottom-navigation">
+    <nav class='mobile ' id='ATnav' >
 
   <ul>
 
@@ -229,7 +246,7 @@
 
     </ul>
 
-</nav>
+</nav><div>
 
       
     <script src="./assets/js/jquery-3.6.4.js"></script>
