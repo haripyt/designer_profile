@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
 
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style> nav.mobile { display: flex; position: fixed; bottom: 0; width: 100%; padding: 0.8rem 0; background: #202020; border-top: 1px solid #0f0f0f; z-index: 9999; margin: 0 auto;border-radius:35px 35px 0px 0px} .mobile { transition: 0.5s ease!important; } nav.mobile ul { list-style: none; display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0; justify-self: center; vertical-align: middle; } nav.mobile ul li { display: flex; flex-direction: column; align-items: center; font-size: 0.7rem; flex-grow: 1; margin: 0; } nav.mobile ul li a { color: #fff; font-size: inherit; display: var(--prP3M8); flex-direction: var(--mZSq9k); }nav.mobile ul li a svg{width: 24px; height: 24px; display: block;margin: 0 auto; } </style>
 </head>
 
 <body>
@@ -46,9 +48,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" data-aos="zoom-in">
-                         <a class="overlay-link" href="https://haripyt.github.io/PROFILE/"></a>
+                       
                         <div class="about-me-box shadow-box">
-                         <a class="overlay-link" href="https://haripyt.github.io/PROFILE/"></a>
+                         
                             <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
                             <div class="img-box">
                                 <img src="1.jpg" alt="About Me">
@@ -107,9 +109,8 @@
                 <div class="row mt-24">
                     <div class="col-md-12">
                         <div class="blog-service-profile-wrap d-flex gap-24">
-                           
-
-                           <div data-aos="zoom-in">
+                            
+                                <div data-aos="zoom-in">
                                 <div class="about-profile-box info-box shadow-box h-full">
                                     <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
                                     <div class="inner-profile-icons shadow-box">
@@ -184,6 +185,8 @@
                 </div>
             </div>
         </section>
+        
+        
 
         <!-- Footer -->
         <footer class="footer-area">
@@ -207,10 +210,53 @@
     </main>
 
 
+    <nav class='mobile' id='ATnav' >
+
+  <ul>
+
+  <li><a href='https://www.harihere.tech/'><ion-icon name="home" style="position: relative;display: block;line-height: 75px;font-size: 1.7em;text-align: center;transition: 0.5s;color: #fff ;margin-left: 6px;margin-top: 3px;"></ion-icon><span >Home</span></a></li>
+
+  <li><a href='https://haripyt.github.io/Personal1/'><ion-icon name= "code-working" style="position: relative;display: block;line-height: 75px;font-size: 1.7em;text-align: center;transition: 0.5s;color: #fff ;margin-left: 6px;margin-top: 3px;"></ion-icon><span>Works</span></a> </li>
+
+   <li><a href='https://drive.google.com/file/d/1Yet4idRxo2k98oxQlbx3Q88M5PmaJ5qs/view'><ion-icon name="document" style="position: relative;display: block;line-height: 75px;font-size: 1.7em;text-align: center;transition: 0.5s;color: #fff ;margin-left: 10px;margin-top: 3px;"></ion-icon><span>Resume</span></a></li>
+
+    <li><a href='https://haripyt.github.io/PROFILE/'><ion-icon name="person" style="position: relative;display: block;line-height: 75px;font-size: 1.7em;text-align: center;transition: 0.5s;color: #fff ;margin-left: 6px;margin-top: 3px;"></ion-icon><span>About</span></a></li>
+
+
+    <li><a href='#'><svg viewBox='0 0 24 24'>
+
+    <path d='M14,20H10V11L6.5,14.5L4.08,12.08L12,4.16L19.92,12.08L17.5,14.5L14,11V20Z' fill='currentColor'/>
+
+</svg><span>To-Top</span></a></li>
+
+    </ul>
+
+</nav>
+
+      
     <script src="./assets/js/jquery-3.6.4.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+    //<![CDATA[
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function(){
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("ATnav").style.bottom="0" 
+    } else {
+     document.getElementById("ATnav").style.bottom = "-80px";
+    }
+    
+    prevScrollpos = currentScrollPos;
+    }
+    //]]>
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
