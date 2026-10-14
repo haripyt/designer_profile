@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haripyt.github.io/designer_profile/sitemap.xml
